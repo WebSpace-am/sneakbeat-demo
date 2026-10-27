@@ -5,9 +5,12 @@ A premium demo website for **Sneak Beat**, a sneaker store at **4 Aram St, 1st f
 
 Store facts used: hours 10:00–22:00 daily · store phone +374 43 300366 · delivery phone +374 96 501514 · map 40.179191, 44.514619 · brands on shelves: Nike, Jordan, adidas, New Balance, On, Vans, Puma, Converse, Crocs, Camper · captions mostly Armenian · bio "In the heart of Yerevan, we move in beat" · brand = red "SNEAK BEAT" wordmark (~#C1232A) on grey (#DADADA).
 
+## 1b. Where the code lives
+**GitHub (private): https://github.com/WebSpace-am/sneakbeat-demo** — branch `main`. Levon (GitHub `lamer1333`, admin) deploys it on a temporary domain (~4 days, from 27 Oct 2026) to show the store's manager; take it down afterwards. Every page carries a demo notice ("not the official store — nothing is sold or sent"). In a new chat: `gh repo clone WebSpace-am/sneakbeat-demo`.
+
 ## 2. Run it
 ```
-cd sneakbeat
+# inside the cloned repo (repo root = the site)
 python3 -m http.server 5173
 ```
 - Mac: http://localhost:5173 (hard refresh Cmd+Shift+R after changes)
@@ -73,4 +76,4 @@ Data saved only in the visitor's browser (localStorage `sb_*`): bag, favourites,
 8. Official brand logo files from the distributor
 
 ## 9. Starter prompt for a new chat
-> I'm continuing a demo website for Sneak Beat (sneaker store, Yerevan). The project is in the `sneakbeat` folder. Read `sneakbeat/HANDOFF.md` and `sneakbeat/NEXT-STEPS.md` first, start the local server (`cd sneakbeat && python3 -m http.server 5173`), then wait for my next request. I prefer minimal, readable design like On / Nike / END., critique + recommendation before building, and plain-language answers.
+> I'm continuing a demo website for Sneak Beat (sneaker store, Yerevan). Clone it with `gh repo clone WebSpace-am/sneakbeat-demo` (private, my account Morpheusedo has access). Read `HANDOFF.md` and `NEXT-STEPS.md` first, start the local server (`python3 -m http.server 5173` in the repo root), then wait for my next request. I prefer minimal, readable design like On / Nike / END., critique + recommendation before building, and plain-language answers.
